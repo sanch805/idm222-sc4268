@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Broadsheet';
+    src: url('/fonts/Broadsheet.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Broadsheet', 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.header {
+    background-color: #F9FBFD;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    height: 150px;
+}
+
+.content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Book Grid Container */
+.books-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.book-card {
+    background: #f8f8f8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.book-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.book-info {
+    padding: 1rem 0;
+}
+
+.book-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #1a2e44;
+}
+
+.book-author {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.book-description {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #333;
+}
+
+.subscription-box {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+/* Tablet Breakpoint */
+@media screen and (min-width: 768px) {
+    .content {
+        max-width: 90%;
+        padding: 2rem;
+    }
+
+    .books-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 2rem;
+    }
+
+    .book-card {
+        padding: 2rem;
+    }
+}
+
+/* Desktop Breakpoint */
+@media screen and (min-width: 1024px) {
+    .content {
+        max-width: 1200px;
+        padding: 3rem;
+    }
+
+    .books-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 3rem;
+    }
+
+    .book-card {
+        padding: 2.5rem;
+    }
+
+    .book-title {
+        font-size: 1.8rem;
+    }
+
+    .book-description {
+        font-size: 1.1rem;
+    }
+
+    .subscription-box {
+        max-width: 800px;
+        margin: 3rem auto;
+        padding: 3rem;
+    }
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #1a2e44;
+        font-size: 1.1rem;
+    }
+}
