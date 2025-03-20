@@ -31,7 +31,7 @@
   
   .navbar h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .navbar h1 a{
@@ -91,7 +91,7 @@
       'footer footer footer footer footer footer';
     gap: 10px;
     background-color: white;
-    padding: 0 10px 10px 10px;
+    padding: 10px;
   }
   
   .grid-container div {
@@ -104,16 +104,12 @@
   }
   
   .intro h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 7px;
   }
 
   .intro h2{
     padding-bottom: 10px;
-  }
-  
-  .intro p {
-    margin: 0 0 30px 0;
   }
 
   .intro ul {
@@ -256,13 +252,33 @@
         display: none;
     }
     .intro {grid-area: 2 / span 4;}
-    .subscribe {grid-area: 2 / span 1;}
+    .subscribe {grid-area: 2 / span 1;
+    height: 450px;}
     .footer {grid-area: 3 / span 6;}
+
+    .cover img{
+        width: 500px;
+        height: 280px;
+    }
+
+    .intro iframe{
+        width: 450px;
+    }
   }
   
   @media only screen and (min-width: 865px) {
     .menu {grid-area: 2 / span 1;}
     .intro {grid-area: 2 / span 4;}
-    .subscribe {grid-area: 2 / span 3;}
+    .subscribe {grid-area: 2 / span 3;
+    height: 300px;}
     .footer {grid-area: 3 / span 7;}
+
+    .cover img{
+        width: 600px;
+        height: 380px;
+    }
+
+    .intro iframe{
+        width: 600px;
+    }
   }
