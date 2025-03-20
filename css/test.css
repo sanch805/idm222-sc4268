@@ -106,6 +106,25 @@
   .intro > p {
     margin-bottom: 7px;
   }
+
+  .intro ul {
+    padding-left: 0; 
+    list-style: none;
+  }
+
+  .intro li{
+    position: relative;
+    padding-left: 25px;
+  }
+
+  .intro li::before {
+    content: "★"; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: .8em;
+    color: black;
+}
   
   .subscribe {
     max-height: 400;
@@ -209,7 +228,7 @@
     }
 
     .menu li {
-        padding: 10px;
+        padding: 10 10 0 10;
         background: none;
     }
 
