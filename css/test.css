@@ -28,9 +28,10 @@
     width: auto;
   }
   
-  .navbar > h1 {
+  .navbar h1 {
     text-align: center;
     font-size: 40px;
+    color: black;
   }
 
   .menu-checkbox:checked + .menu-icon + .menu {
@@ -89,7 +90,7 @@
     padding: 10px;
   }
   
-  .grid-container > div {
+  .grid-container div {
     padding: 10px;
     font-size: 20px;
   }
@@ -98,12 +99,16 @@
     grid-area: main;
   }
   
-  .intro > h1 {
+  .intro h1 {
     font-size: 30px;
     margin-bottom: 7px;
   }
+
+  .intro h2{
+    padding-bottom: 10px;;
+  }
   
-  .intro > p {
+  .intro p {
     margin-bottom: 7px;
   }
 
@@ -124,7 +129,11 @@
     top: 0;
     font-size: .8em;
     color: black;
-}
+  }
+
+  .con a{
+    color: black;
+  }
   
   .subscribe {
     max-height: 400;
@@ -135,9 +144,9 @@
     color: #000000;
   }
   
-  .subscribe > h2 {
+  .subscribe h2 {
     font-size: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   
   .subscribe li {
@@ -145,14 +154,14 @@
     margin-bottom: 5px;
   }
 
-.book-preview {
+  .book-preview {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
     margin: 10 0;
   }
 
-.book-image {
+  .book-image {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -244,7 +253,12 @@
     .intro {grid-area: 2 / span 4;}
     .subscribe {grid-area: 2 / span 1;}
     .footer {grid-area: 3 / span 6;}
-  }
+
+    .subscribe{
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      }
+    }
   
   @media only screen and (min-width: 865px) {
     .menu {grid-area: 2 / span 1;}

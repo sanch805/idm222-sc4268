@@ -6,21 +6,22 @@
 </head>
 <body>
 
-<div class="grid-container">
-
-  <div class="navbar">
+  <nav class="navbar">
     <img src="/media/logo.png" alt="Persephone Books Logo" class="logo">
-    <h1>Persephone Books</h1>
-</div>
+    <h1><a href="index.html">Persephone Books</a></h1>
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">☰</label>        
+    <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-  <div class="menu">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
+<div class="grid-container">
 
   <div class="intro">
     <h1>Our Books</h1>
@@ -30,7 +31,6 @@
         <section class="book-preview">
             <img src="/media/book1.jpg" alt="Historical black and white photograph of a woman working on a tire" class="book-image">
             <h2 class="book-title">William - an Englishman by Cicely Hamilton</h2>
-            <br>
             <p>
                 In our view Persephone Book no.1 William - an Englishman is one of the greatest novels about war ever written: not the war of the fighting...
             </p>
@@ -38,12 +38,11 @@
         <section class="book-preview">
             <img src="/media/book2.jpg" alt="Black and white illustration of a woman on a farm" class="book-image">
             <h2 class="book-title">Mariana by Monica Dickens</h2>
-            <br>
             <p>
                 We chose to publish Mariana because we wanted a novel like Dusty Answer, I Capture the Castle or The Pursuit of Love about a girl encountering life and...
             </p>
         </section>
-        <a href="testbooks.html" class="button">Explore more books!</a>
+        <a href="books.html" class="button">Explore more books!</a>
     </div>
   </div>  
 
